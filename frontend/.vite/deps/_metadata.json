@@ -1,0 +1,40 @@
+{
+  "hash": "6150e872",
+  "configHash": "8760f555",
+  "lockfileHash": "2301f7a0",
+  "browserHash": "5b59a65c",
+  "optimized": {
+    "react/jsx-dev-runtime": {
+      "src": "../../node_modules/react/jsx-dev-runtime.js",
+      "file": "react_jsx-dev-runtime.js",
+      "fileHash": "39b6ca6a",
+      "needsInterop": true
+    },
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "30ee5662",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "d658d255",
+      "needsInterop": true
+    },
+    "@mui/material": {
+      "src": "../../node_modules/@mui/material/index.js",
+      "file": "@mui_material.js",
+      "fileHash": "36283aca",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-YIEACHPR": {
+      "file": "chunk-YIEACHPR.js"
+    },
+    "chunk-6EPYQA3G": {
+      "file": "chunk-6EPYQA3G.js"
+    }
+  }
+}
