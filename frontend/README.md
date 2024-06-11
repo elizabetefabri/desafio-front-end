@@ -10,7 +10,6 @@
 
 - [ViteJs]()
 - [TailwindCss]()
--
 
 ## Confira o detalhamento da Instalação e Desenvolvimeto do Projeto
 <table>
@@ -49,7 +48,3 @@
 ##### Desenvolvido por <span>Elizabete Fabri</span> ❤
 
 </div>
-
-
-
-
