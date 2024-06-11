@@ -27,8 +27,9 @@ const Header: React.FC = () => {
   return (
     <AppBar
       sx={{
-        backgroundColor: "var(--white-bg)",
-        height: "110px",
+        boxShadow: "none",
+        backgroundColor: "var(--background-color)",
+        height: "100px",
         display: "flex",
         justifyContent: "center",
       }}
@@ -38,10 +39,11 @@ const Header: React.FC = () => {
         <Typography
           variant="h2"
           sx={{
-            color: "var(--grey-dark)",
-            fontSize: "30px",
+            color: "var(--text-text)",
+            fontSize: "28px",
             fontWeight: "700",
             flexGrow: 1,
+            marginLeft: "250px"
           }}
         >
           Dashboard
@@ -88,7 +90,7 @@ const Header: React.FC = () => {
             variant="h5"
             sx={{
               ml: 2,
-              color: "var(--grey-dark)",
+              color: "var(--text-text)",
               fontSize: "14px",
               marginBottom: "20px",
               marginLeft: "10px",
@@ -98,7 +100,7 @@ const Header: React.FC = () => {
             Elizabete
           </Typography>
           <IconButton
-            sx={{ ml: 1, color: "var(--grey-dark)", marginBottom: "20px" }}
+            sx={{ ml: 1, color: "var(--text-text)", marginBottom: "20px" }}
           >
             <KeyboardArrowDown />
           </IconButton>
