@@ -1,53 +1,35 @@
-import React, { useState } from 'react';
-import { List, ListItem, ListItemIcon, ListItemText, IconButton, Box, Typography } from '@mui/material';
-import { Dashboard, EmojiEvents } from '@mui/icons-material';
-import CloseIcon from '@mui/icons-material/Close';
-import LogoImage from "../../assets/images/png/logo-white.png";
-import './navAside.css';
+import { Menu, MenuItem, Sidebar } from 'react-pro-sidebar';
 
+import logoWhite from '../../assets/images/png/logo-white.png';
+import backImg from '../../assets/images/png/back.png';
+import arrowsImg from '../../assets/images/png/arrows.png';
+import imgDash from '../../assets/images/svg/dash.svg';
+import imgBoard from '../../assets/images/svg/graph.svg';
 
-const AsideNav: React.FC = () => {
-  const [open, setOpen] = useState(false);
+ 
+import './navAside.css'
 
-  const handleToggle = () => {
-    setOpen(!open);
-  };
-
+export function NavAside(){
   return (
-    <div>
-      <IconButton onClick={handleToggle} className='abrirIndex'>
-        <img src={LogoImage} alt="Logo" className="w-10 h-10 bg-[var(--blue-color)] rounded p-1" />
-      </IconButton>
-
-      {open && (
-        <aside className="fixed top-0 left-0 w-[345px] h-screen bg-[var(--background-color)] flex flex-col shadow-lg z-50">
-          <Box className="flex justify-between items-center p-4 bg-[var(--blue-color)]">
-            <img src={LogoImage} alt="Logo" className="w-12 h-12 bg-[var(--blue-color)] rounded-full p-1" />
-            <Typography variant="h6" className="text-white ml-2">Blue</Typography>
-            <IconButton onClick={handleToggle} className="text-white">
-              <CloseIcon />
-            </IconButton>
-          </Box>
-
-          <List>
-            <ListItem button className="bg-[var(--blue-color)] text-white my-2">
-              <ListItemIcon>
-                <Dashboard className="text-white" />
-              </ListItemIcon>
-              <ListItemText primary="Dashboard" />
-            </ListItem>
-
-            <ListItem button className="bg-white text-[var(--grey-dark)] my-2">
-              <ListItemIcon>
-                <EmojiEvents className="text-[var(--grey-dark)]" />
-              </ListItemIcon>
-              <ListItemText primary="Leaderboard" />
-            </ListItem>
-          </List>
-        </aside>
-      )}
-    </div>
+    <Sidebar className="bg-white  text-text ">
+      <Menu className="p-5" iconShape="round flex-grow">
+        <MenuItem icon={<img src={logoWhite} className="bg-blue rounded" alt="Logo" />}>Blue</MenuItem>
+        <div className="menuItem__Dashboard pr-4 pl-4">
+          <MenuItem className="menuDash bg-blue duration-300 ease-in-out hover:scale-105 rounded-2xl bold text-white" icon={<img src={imgDash} alt="Logo" />}>Dashboard</MenuItem>
+        </div>
+        <MenuItem icon={<img src={imgBoard}  alt="Logo" />}>Leaderboard</MenuItem>
+             
+      </Menu>
+      
+      <div className="background relative flex flex-col items-center text-center p-5  rounded-lg  w-full">
+          <img src={backImg} alt="Background" className="absolute inset-0 w-full h-full object-cover rounded-md" />
+          <div className="relative z-10 w-8 h-8 mb-2">
+            <img src={arrowsImg} alt="Icon" className="w-full h-full object-contain" />
+          </div>
+          <h3 className="relative z-10 text-lg font-bold text-white mb-2">Conheça a Blue</h3>
+          <p className="relative z-10 text-sm p-2  text-white mb-4">Saiba mais informações sobre a Blue, uma operadora de saúde Health Tech.</p>
+          <button className="relative z-10 px-8 py-2 bg-white font-medium text-blue rounded hover:bg-blue-700 transition duration-300">Conhecer</button>
+        </div>
+    </Sidebar>
   );
-};
-
-export default AsideNav;
+}
