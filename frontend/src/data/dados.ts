@@ -84,7 +84,20 @@ export const data = {
       "Blue Serviços": 200,
     },
   ],
-  
+  datalife: [
+    { name: "Jan", uv: 4000, pv: 8000 },
+    { name: "Fev", uv: 4800, pv: 6500 },
+    { name: "Mar", uv: 2000, pv: 9800 },
+    { name: "Abr", uv: 2000, pv: 5000 },
+    { name: "Mai", uv: 3000, pv: 7000 },
+    { name: "Jun", uv: 2390, pv: 3800 },
+    { name: "Jul", uv: 3490, pv: 9000 },
+    { name: "Ago", uv: 2000, pv: 2400 },
+    { name: "Set", uv: 3000, pv: 5000 },
+    { name: "Out", uv: 2000, pv: 9800 },
+    { name: "Nov", uv: 3000, pv: 3908 },
+    { name: "Dez", uv: 2000, pv: 4800 }
+  ]
 };
 
 export const AllProductsData = {
@@ -141,5 +154,3 @@ export const AllProductsData = {
     ],
   },
 };
-
-console.log(data);
