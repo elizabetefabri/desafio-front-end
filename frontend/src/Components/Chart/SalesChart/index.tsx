@@ -8,7 +8,7 @@ import userTag from "../../../assets/images/png/user.png";
 
 export function Card() {
   return (
-    <div className="flex flex-col items-center h-[250px] w-[550px] bg-white shadow-md p-4 rounded-md ">
+    <div className="flex flex-col items-center h-[250px] w-[610px] bg-white shadow-md p-4 rounded-md ">
       <div className="flex w-full ">
         <div>
           <h1 className="text-text font-bold">Vendas hoje</h1>

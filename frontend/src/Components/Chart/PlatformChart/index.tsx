@@ -13,11 +13,11 @@ import { data } from '../../../data/dados';
 
 export function PlatFormChart(){
   return (
-    <div className="shadow-md rounded p-2 bg-white">
+    <div className="shadow-md rounded p-2 bg-white h-[250px] w-[550px]">
       <div>
         <h1 className="text-text font-bold pl-5">Plataformas</h1>
       </div>
-    <ResponsiveContainer width={420} height={210}>
+    <ResponsiveContainer width="100%" height={210}>
       <LineChart data={data.dados}>
         <CartesianGrid horizontal={true} vertical={false} />
         <XAxis dataKey="month" axisLine={{ strokeWidth: 0 }} tickLine={false} />
