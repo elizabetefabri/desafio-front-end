@@ -1,3 +1,8 @@
 div.hidden.lg\:block.fixed.inset-y-0.left-0.w-64.h-full.z-50{    
     z-index: 100000;
 }
+.flex.items-center.justify-center.w-full.bg-gray-100.rounded-lg{
+    height: 50px;
+    margin-top: 25px;
+    margin-right: 25px;
+}
