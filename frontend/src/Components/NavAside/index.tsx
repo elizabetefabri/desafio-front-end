@@ -23,7 +23,7 @@ export function NavAside({ closeSidebar }: NavAsideProps) {
             Blue
           </MenuItem>
           <MenuItem 
-            className="menuDash mb-2 bg-blue rounded-2xl font-bold text-white hover:bg-blue-dark flex items-center justify-between p-3" 
+            className="menuDash mb-2 bg-blue rounded-2xl font-bold text-white hover:bg-blue flex items-center justify-between p-3" 
             icon={<img src={imgDash} alt="Dashboard Icon" className="w-6 h-6" />} 
           >
             Dashboard
@@ -42,10 +42,10 @@ export function NavAside({ closeSidebar }: NavAsideProps) {
           </div>
           <h3 className="relative z-10 text-lg font-bold text-white mb-2">Conheça a Blue</h3>
           <p className="relative z-10 text-sm p-4 text-white mb-4">Saiba mais informações sobre a Blue, uma operadora de saúde Health Tech.</p>
-          <button className="relative z-10 px-8 py-2  font-medium text-blue bg-white rounded hover:bg-blue-700 transition duration-300">Conhecer</button>
+          <button className="relative z-10 px-8 py-2  font-medium text-blue bg-white rounded hover:bg-blue transition duration-300">Conhecer</button>
         </div>
       </Sidebar>
-      <button onClick={closeSidebar} className="lg:hidden absolute top-4 right-4 z-50 bg-blue-500 text-text p-2 rounded">X</button>
+      <button onClick={closeSidebar} className="lg:hidden absolute top-4 right-4 z-50 bg-blue text-text p-2 rounded">X</button>
     </div>
   );
 }

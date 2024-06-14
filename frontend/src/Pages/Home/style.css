@@ -1,0 +1,21 @@
+@media (min-width: 768px) {
+  .home-grid {
+    grid-template-columns: minmax(14rem, auto) 1fr;
+  }
+}
+
+@media (min-width: 768px) {
+  .main-content {
+    margin-left: 0px;
+    overflow-x: hidden;
+  }
+}
+
+@media (min-width: 768px) {
+  .mobile {
+    flex-direction: row;
+  }
+}
+.hidden.md\:flex.w-full.flex-col {
+    width: 250px;
+}
