@@ -13,7 +13,7 @@ import { data } from '../../../data/dados';
 
 export function PlatFormChart(){
   return (
-    <div className="shadow-md rounded p-2 bg-white h-[250px] w-[550px]">
+    <div className="shadow-md rounded p-2 bg-white h-[250px] w-[460px]">
       <div>
         <h1 className="text-text font-bold pl-5">Plataformas</h1>
       </div>

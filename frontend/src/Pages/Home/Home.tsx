@@ -16,49 +16,32 @@ export function Home() {
   };
 
   return (
-    <div className="md:grid h-screen md:grid-cols-[14rem_1fr] flex flex-col">
+    <div className="md:grid h-screen home-grid flex flex-col">
       <div className="flex flex-col md:flex-row w-screen">
-        
         <div className="hidden md:flex w-full flex-col">
           <NavAside closeSidebar={toggleSidebar} />
         </div>
         
-        <main className="flex p-5 flex-col gap-2">
+        <main className="main-content flex p-5 flex-col gap-2">
           <section className="mobile flex flex-col xl:flex-row gap-2">
-            <div className="">
-              <Card />
-            </div>
-            <div className="">
-              <PlatFormChart />
-            </div>
+            <div><Card /></div>
+            <div><PlatFormChart /></div>
           </section>
           
           <section className="mobile flex flex-col xl:flex-row gap-2">
-            <div className="">
-              <PerformanceChart />
-            </div>
-            <div className="">
-              <LineChartTsx />
-            </div>
-            <div className="">
-              <LineChartTsx />
-            </div>
+            <div><PerformanceChart /></div>
+            <div><LineChartTsx /></div>
+            <div><LineChartTsx /></div>
           </section>
 
           <section className="mobile flex flex-col xl:flex-row gap-2">
-            <div className="">
-              <AllProductsChart />
-            </div>
-            <div className="">
-              <LineChartTsx />
-            </div>
-            <div className="">
-              <LineChartTsx />
-            </div>
+            <div><AllProductsChart /></div>
+            <div><LineChartTsx /></div>
+            <div><LineChartTsx /></div>
           </section>
-
         </main>
       </div>
     </div>
   );
 }
+

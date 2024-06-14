@@ -3,7 +3,7 @@ import { data } from "../../../data/dados";
 
 export function PerformanceChart() {
     return (
-        <div className="shadow-md p-4 rounded h-[300px] w-[550px] bg-white">
+        <div className="shadow-md p-4 rounded h-[300px] w-[450px] bg-white">
           <h1 className="text-lg font-bold text-text mb-4">Rendimento total</h1>
           <ResponsiveContainer width="100%" height={230}>
             <BarChart data={data.performance}>

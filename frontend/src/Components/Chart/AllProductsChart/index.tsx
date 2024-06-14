@@ -9,7 +9,7 @@ import { GraphPercentage } from './percentage';
 
 const AllProductsChart: React.FC = () => {
   return (
-    <div className="w-full h-[300px] lg:w-[550px] bg-white rounded">
+    <div className="w-full h-[300px] lg:w-[450px] bg-white rounded">
       <TableContainer
       component={Paper}
       sx={{
