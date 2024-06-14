@@ -2,18 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
-html, body { height: 100%; }
-body { 
-  background-color: #F9FAFB;
-  margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body,
+html {
+  background-color: #f9fafb;
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  height: 100%;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between; 
+  width: 100%; 
+  box-sizing: border-box; 
+}
+
 :root {
   --primary-color: #3498db;
   --secondary-color: #2ecc71;
   --accent-color: #e74c3c;
-  --background-color: #F9FAFB;
+  --background-color: #f9fafb;
   --white-color: #ffffff;
   --text-color: #2c3e50;
-  --text-text: #151D48;
+  --text-text: #151d48;
 
   --success-light: #d3fcd2;
   --success-color: #22c55e;
