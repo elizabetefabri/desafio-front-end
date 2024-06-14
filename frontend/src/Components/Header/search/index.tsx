@@ -10,7 +10,7 @@ export function SearchFilter() {
   };
 
   return (
-    <div className="flex items-center justify-center w-full h-10 mt-10  bg-gray-100 rounded-lg">
+    <div className="flex items-center justify-center w-full h-10 mt-7 bg-gray-100 rounded-lg">
       <div className="flex gap-2 px-4 py-3 items-center w-full">
         <Search className="text-lupa" />
         <input
