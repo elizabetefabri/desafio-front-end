@@ -6,7 +6,6 @@ export function SearchFilter() {
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setSearchTerm(event.target.value);
-    // Adicione a lógica de pesquisa aqui, por exemplo, filtrando uma lista de itens
   };
 
   return (

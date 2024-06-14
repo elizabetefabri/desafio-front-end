@@ -6,7 +6,8 @@ import { PerformanceChart } from '../../Components/Chart/PerformanceChart';
 import { PlatFormChart } from '../../Components/Chart/PlatformChart';
 import { Card } from '../../Components/Chart/SalesChart';
 import { NavAside } from '../../Components/NavAside';
-import './home.css';
+import './style.css';
+import MapChart from '../../Components/Chart/MapChart';
 
 export function Home() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -36,7 +37,7 @@ export function Home() {
 
           <section className="mobile flex flex-col xl:flex-row gap-2">
             <div><AllProductsChart /></div>
-            <div><LineChartTsx /></div>
+            <div><MapChart /></div>
             <div><LineChartTsx /></div>
           </section>
         </main>

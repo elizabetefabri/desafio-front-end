@@ -1,6 +1,22 @@
 import { faker } from "@faker-js/faker";
 
+export const Region = {
+  region: "BR",
+  width: 0,
+  displayMode: "regions",
+  resolution: "provinces",
+  colorAxis: { colors: ["#2500ff", "#2500ff"] },
+  datalessRegionColor: "#D4D4D4",
+};
 export const data = {
+  mapa: [
+    ["Estado", "População"],
+    ["Goiânia", 6970286],
+    ["Amazonas", 28962558],
+    ["Acre", 1153821],
+    ["Rio de Janeiro", 9921361],
+    ["São Paulo", 6820636],
+  ],
   performance: [
     { day: "Segunda", Aguardando: 14500, Implantadas: 13400 },
     { day: "Terça", Aguardando: 16500, Implantadas: 12000 },

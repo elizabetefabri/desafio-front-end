@@ -1,4 +1,3 @@
-
 type CardColorsProps = {
     background: string,
     src: string,
