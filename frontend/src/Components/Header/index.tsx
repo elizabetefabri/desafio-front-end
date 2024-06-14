@@ -36,9 +36,12 @@ const Header = () => {
             <img src={logoWhite} alt="Logo" className="bg-blue rounded w-8 h-8" />
           </IconButton>
           <Typography variant="h6" sx={{ flexGrow: 1, display: { xs: 'none', lg: 'block' } }}>
-            Dashboard
+            
           </Typography>
           <Box sx={{ display: { xs: 'none', lg: 'flex' }, flexGrow: 1, justifyContent: 'flex-end' }}>
+          <Typography variant="h5" sx={{ color: '#151D48', fontWeight: '700', paddingRight: '100px', flexGrow: 1, display: { xs: 'none', lg: 'flex' }, justifyContent: "center", alignItems: "center" }}>
+            Dashboard
+          </Typography>
             <SearchFilter />
             <Traductor />
             <BadgeNotification />
